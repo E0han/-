@@ -1,4 +1,5 @@
-#dictionary
+#dictionary by 0han 
+#coding: utf-8
 import requests
 import bs4
 import os
@@ -8,7 +9,7 @@ import sys
 def createlog():
     form="%Y-%m-%d %X"
     hr="========"
-    f=open("C:/Users/Owner/Dropbox/python/py/dic/log.txt", 'a', encoding='utf-8')
+    f=open("log.txt", 'a', encoding='utf-8')
     f.write('\n'+hr+'\n'+time.strftime(form,time.localtime())+'\n'+hr)
     f.close()
 
@@ -18,7 +19,7 @@ createlog()
 while True:
     rooturl='http://www.youdao.com/w/'
     url=input("请输入词语：")
-    f=open("C:/Users/Owner/Dropbox/python/py/dic/log.txt", 'a', encoding='utf-8')
+    f=open("log.txt", 'a', encoding='utf-8')
     if url=="q":
         print("log日志已储存 谢谢使用")
         f.close()
